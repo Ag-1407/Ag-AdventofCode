@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import itertools
-import numpy as np
 
 def lesen():
     datei = open("3_day.txt", "r")
@@ -21,7 +19,10 @@ def check(daten):
         y = 0
         match = 0
 
-        for y in range(len(daten)):
+        for i in range(len(daten)):
+            if(y >= len(daten)):
+                break
+            
             zeile = list(daten[y])
             if(x >= len(zeile)):
                 x = x - len(zeile)
@@ -30,7 +31,6 @@ def check(daten):
 
             x += X
             y += Y
-        print(match)
         summ *= match
         
 

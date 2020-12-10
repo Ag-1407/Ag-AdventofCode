@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import itertools
-import numpy as np
 
 def lesen():
     datei = open("3_day.txt", "r")
